@@ -119,12 +119,6 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\VSTOContrib.Core\VSTOContrib.Core.csproj">
-      <Project>{6B0191EB-56BD-4A66-8ABF-B4B96905AFBF}</Project>
-      <Name>VSTOContrib.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

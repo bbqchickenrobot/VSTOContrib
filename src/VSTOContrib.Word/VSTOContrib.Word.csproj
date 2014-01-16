@@ -63,12 +63,6 @@
     <Compile Include="RibbonFactory\WordViewProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VSTOContrib.Core\VSTOContrib.Core.csproj">
-      <Project>{6B0191EB-56BD-4A66-8ABF-B4B96905AFBF}</Project>
-      <Name>VSTOContrib.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
