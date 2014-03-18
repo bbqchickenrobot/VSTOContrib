@@ -59,10 +59,6 @@
     <Compile Include="RibbonFactory\Views\TestRibbonViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\VSTOContrib.Core\VSTOContrib.Core.csproj">
-      <Project>{6B0191EB-56BD-4A66-8ABF-B4B96905AFBF}</Project>
-      <Name>VSTOContrib.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\VSTOContrib.Word\VSTOContrib.Word.csproj">
       <Project>{9D3119D9-B898-45E8-92AF-2566DA3F85FC}</Project>
       <Name>VSTOContrib.Word</Name>

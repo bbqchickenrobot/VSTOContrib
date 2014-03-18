@@ -33,7 +33,6 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\VSTOContrib.Outlook.xml</DocumentationFile>
   </PropertyGroup>
-
   <ItemGroup>
     <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
       <SpecificVersion>False</SpecificVersion>
@@ -99,12 +98,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\VSTOContrib.Core\VSTOContrib.Core.csproj">
-      <Project>{6B0191EB-56BD-4A66-8ABF-B4B96905AFBF}</Project>
-      <Name>VSTOContrib.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

@@ -252,10 +252,6 @@
       <Project>{cbc234f1-3f4a-4a1a-9a92-6c1a7ad98e77}</Project>
       <Name>VSTOContrib.Autofac</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\VSTOContrib.Core\VSTOContrib.Core.csproj">
-      <Project>{6b0191eb-56bd-4a66-8abf-b4b96905afbf}</Project>
-      <Name>VSTOContrib.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\VSTOContrib.Word\VSTOContrib.Word.csproj">
       <Project>{9d3119d9-b898-45e8-92af-2566da3f85fc}</Project>
       <Name>VSTOContrib.Word</Name>
