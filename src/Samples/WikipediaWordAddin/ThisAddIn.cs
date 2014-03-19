@@ -13,6 +13,7 @@ namespace WikipediaWordAddin
         private void ThisAddInStartup(object sender, EventArgs e)
         {
             RibbonFactory.Current.SetApplication(Application, this);
+            
         }
 
         private void ThisAddInShutdown(object sender, EventArgs e)
