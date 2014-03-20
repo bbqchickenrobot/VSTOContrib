@@ -27,7 +27,12 @@ namespace WikipediaWordAddin
             if (System.Windows.Application.Current == null)
                 new Application { ShutdownMode = ShutdownMode.OnExplicitShutdown };
 
-            return new WordRibbonFactory(new AutofacViewModelFactory(new AddinModule()), () => CustomTaskPanes, Globals.Factory, typeof(AddinModule).Assembly);
+            //return new WordRibbonFactory(new AutofacViewModelFactory(new AddinModule()), () => CustomTaskPanes, 
+            //    Globals.Factory, typeof(AddinModule).Assembly);
+            var module = new AddinModule();
+            var factory = new AutofacViewModelFactory(module);
+            return new WordRibbonFactory(factory, () => CustomTaskPanes, new DefaultViewLocationStrategy(),
+                Globals.Factory, typeof(AddinModule).Assembly);
         }
 
         /// <summary>
