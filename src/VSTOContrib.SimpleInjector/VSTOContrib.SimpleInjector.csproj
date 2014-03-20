@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{43E5343A-98D7-4E29-AA4E-4DB82C7EC387}</ProjectGuid>
+    <ProjectGuid>{4BCB45DA-5ACF-40D2-975C-3D2431B0C9D4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VSTOContrib.SimpleInjector</RootNamespace>

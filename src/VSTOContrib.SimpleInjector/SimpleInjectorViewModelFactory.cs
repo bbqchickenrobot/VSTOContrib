@@ -29,14 +29,17 @@ namespace VSTOContrib.SimpleInjector
 
         public SimpleInjectorViewModelFactory(Container container)
         {
-            this._container = container;
+            if(container == null)
+                throw new ArgumentNullException("The argument container is required and cannot be null");
+            _container = container;
         }
 
-
+        // todo - test and add null checks for Resolve and Release methods (or ignore & return no-op)
         public IRibbonViewModel Resolve(Type viewModelType)
         {
             var lifetime = _container.BeginLifetimeScope();
             var viewModel = (IRibbonViewModel) _container.GetInstance(viewModelType);
+
             _lifetimeScopeLookups.Add(viewModel, lifetime);
             return viewModel;
         }
