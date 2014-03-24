@@ -37,10 +37,10 @@ namespace VSTOContrib.SimpleInjector
         // todo - test and add null checks for Resolve and Release methods (or ignore & return no-op)
         public IRibbonViewModel Resolve(Type viewModelType)
         {
-            var lifetime = _container.BeginLifetimeScope();
+            var lifetimeScope = _container.BeginLifetimeScope();
             var viewModel = (IRibbonViewModel) _container.GetInstance(viewModelType);
 
-            _lifetimeScopeLookups.Add(viewModel, lifetime);
+            _lifetimeScopeLookups.Add(viewModel, lifetimeScope);
             return viewModel;
         }
 
