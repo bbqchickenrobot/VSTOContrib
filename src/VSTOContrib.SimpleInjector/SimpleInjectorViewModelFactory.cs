@@ -38,10 +38,18 @@ namespace VSTOContrib.SimpleInjector
         public IRibbonViewModel Resolve(Type viewModelType)
         {
             var lifetimeScope = _container.BeginLifetimeScope();
-            var viewModel = (IRibbonViewModel) _container.GetInstance(viewModelType);
 
-            _lifetimeScopeLookups.Add(viewModel, lifetimeScope);
-            return viewModel;
+            try
+            {
+                var viewModel = (IRibbonViewModel)_container.GetInstance(viewModelType);
+                _lifetimeScopeLookups.Add(viewModel, lifetimeScope);
+                return viewModel;
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }            
         }
 
         public void Release(IRibbonViewModel viewModelInstance)
