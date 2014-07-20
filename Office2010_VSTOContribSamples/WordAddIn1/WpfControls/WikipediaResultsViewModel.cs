@@ -18,6 +18,7 @@ namespace WikipediaWordAddin.Core.WpfControls
 
         public WikipediaResultsViewModel(IWikipediaService wikipediaService)
         {
+            
             searchTimer.Elapsed += DoSearch;
             Application.Current.Dispatcher.Invoke(new Action(() => uiScheduler = TaskScheduler.FromCurrentSynchronizationContext()));
             this.wikipediaService = wikipediaService;
